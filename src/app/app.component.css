@@ -1,0 +1,23 @@
+#header{
+    text-align:center;
+    margin:auto;
+    height:400px;
+}
+
+#head{
+    color:wheat;
+    text-align:center;
+    margin:auto;
+}
+
+.home{
+ margin-right:2px;
+    font-size:30px;
+    color:wheat;
+    text-align:center;
+    text-decoration: none;
+}
+
+#route{
+    margin-top:100px;
+}

@@ -1,0 +1,25 @@
+<p>
+  wishlist works!
+</p>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="search movie" [(ngModel)]="the_movie">
+  
+  </div> <br> <br>
+  <button type="button" (click)="getWish()" class="btn btn-success">ENTER</button>
+
+<br> <br>
+   <div class="card border-success mb-4" *ngFor="let a of response">
+           <img class="for_im" src="http://localhost:8081/api/v1/movies/{{a.poster_path}}"alt="No Image In Api"> 
+          <div class="card-body">
+                  <h5 class="card-title">{{a.title}}</h5> 
+          <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Popularity  : {{a.popularity}}</li>
+                  <li class="list-group-item">Vote_average  : {{a.vote_average}}</li>
+                  <!-- <li class="list-group-item"><a [routerLink]="['more',a.id]" class="btn btn-primary">GET FULL INFORMATION</a></li> -->
+                </ul>
+        </div>
+      </div> 
+
+
+

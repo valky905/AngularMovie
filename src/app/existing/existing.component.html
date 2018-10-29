@@ -1,0 +1,18 @@
+<div *ngIf="val" >
+  <div id ="single">Data  Alredy present </div>
+  </div>
+
+  <div *ngIf="!val" >
+      <div id ="single">Data inserted</div>
+      </div>
+      <br> <br>
+  <div *ngIf="toggle">
+      <div class=" single_movie" *ngFor="let a of db_data">
+         MOVIE TITLE : <p>{{a.movieTitle}}</p> 
+         <button type="button" (click)="addMovie(a)" class="btn btn-success">Add</button>
+         <button type="button" (click)="delete(a.id)" class="btn btn-success">DELETE from Server</button>
+         <!-- <li class="list-group-item"><a [routerLink]="['delete',a.id]"  [queryParams]="{q:'exist'}" class="btn btn-primary">DELETE</a></li> -->
+      </div>
+  </div>    
+  <br> <br>
+<!-- <button type="button" (click)="addMovie(a.title)" class="btn btn-success">SEE ALL MOVIES ADDED</button>  -->

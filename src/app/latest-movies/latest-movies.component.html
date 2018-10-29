@@ -1,0 +1,14 @@
+<div class="card border-success mb-4" *ngFor="let a of response.results">
+ 
+  <img src="https://image.tmdb.org/t/p/w300/{{a.poster_path}}"alt="No Image In Api">
+  <div class="card-body">
+          <h5 class="card-title">{{a.title}}</h5> 
+  
+  <ul class="list-group list-group-flush">
+          <li class="list-group-item">Popularity  : {{a.popularity}}</li>
+          <li class="list-group-item">Vote_average  : {{a.vote_average}}</li>
+          <li class="list-group-item"><a [routerLink]="['more',a.id]" class="btn btn-primary">GET FULL INFORMATION</a></li>
+          
+        </ul>
+</div>
+</div>

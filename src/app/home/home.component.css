@@ -1,0 +1,16 @@
+#sidebar{
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+}
+
+#lmovies{
+    font-weight: bold;
+    /* background-color: aliceblue; */
+    font-size:30px;
+    color:wheat;
+    height:50px;
+    text-decoration:none;
+    flex:1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

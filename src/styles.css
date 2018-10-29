@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    overflow-x: hidden;
+    margin:0px;
+    background-image: url("https://wallpaperset.com/w/full/8/5/a/26663.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(min-width:100px){
+    body{
+        overflow-x: hidden;
+        
+    }
+} 

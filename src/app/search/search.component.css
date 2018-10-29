@@ -1,0 +1,14 @@
+.list-group{
+    text-decoration: none;
+}
+
+.for_im{
+    height:300px;
+    width:400px;
+}
+
+.card{
+    width:500px;
+    align-items: center;
+    margin: auto;
+}

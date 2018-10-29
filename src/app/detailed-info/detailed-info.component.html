@@ -1,0 +1,24 @@
+<div class="card border-success mb-4">
+  <br>
+    <img src= "https://image.tmdb.org/t/p/w500/{{res.poster_path}}" alt="no image in API">
+    <div class="card-body">
+            <h5 class="card-title">{{res.title}}</h5> 
+            <p> {{res.overview}}</p>
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item">POPULARITY  : {{res.popularity}}</li>
+            <li class="list-group-item">ADULT  : {{res.adult}}</li>
+            <li class="list-group-item">BUDGET  : {{res.budget}}</li>
+            <li class="list-group-item">ORIGINAL_LANGUAGE : {{res.original_language}}</li>
+            <li class="list-group-item">ORIGINAL_TITLE :{{res.original_title}}</li>
+            <li class="list-group-item">RELEASE_DATE  : {{res.release_date}}</li>
+            <li class="list-group-item">STATUS  :{{res.status}}</li>
+            <li class="list-group-item">TAGLINE  : {{res.tagline}}</li>
+            <li class="list-group-item"><div *ngFor="let a of res.production_companies">PRODUCTION COMPANY :{{a.name}}</div></li>
+            <li class="list-group-item"><div *ngFor="let a of res.production_countries">PRODUCTION COUNTRIES :{{a.name}}</div></li>
+            <li class="list-group-item"><a (click) ="addtowishlist(res)" [routerLink]="['add_db',res.id]" class="btn btn-primary">ADD To Wishlist</a></li>
+        
+            
+            <!-- <li class="list-group-item"><a [routerLink]="['add_db',res.id]" class="btn btn-primary">ADD To New</a></li> -->
+          </ul>
+  </div>
+</div>
